@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <title>School Thanos Katrakis</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav class="main-nav-bar">
+            <ul>
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/courses.html">Courses</a></li>
+                <li><a href="/src/trainers.html">Trainers</a></li>
+                <li><a href="/src/students.html">Students</a></li>
+                <li><a href="/src/assignments.html">Assignments</a></li>
+                <li><a href="/src/studentCourse.html">Student Per Course</a></li>
+                <li><a href="/src/trainerCourse.html">Trainer Per Course</a></li>
+                <li><a href="/src/assignmentCourse.html">Assignment Per Course</a></li>
+                <li><a href="/src/assignStudentCourse.html">Assignment Per Student Per Course</a></li>
+            </ul>
+        </nav>
+
+        <h3>ASSIGNMENTS DATA</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();assignmentSubmit();" autocomplete="off">
+                        <label for="assignmentTitle">Assignment Title:</label><label class="validation-error hide"></label><br>
+                        <input type="text" id="assignmentTitle" placeholder="Enter Assignment Title Here" pattern="[A-Za-z]+"
+                            maxlength="30" required>
+                        <br>
+                        <label for="assignmentDescription">Assignment Description:</label><br>
+                        <input type="text" id="assignmentDescription" placeholder="Enter Course Description Here" pattern="[A-Za-z]+"
+                            maxlength="30" required>
+                        <br>
+                        <label for="aSubmissionDate">Assignment Submission Date:</label><br>
+                        <input type="date" id="aSubmissionDate" required>
+                        <br>
+                        <label for="oralMark">Oral Mark:</label><br>
+                        <input type="number" id="oralMark" placeholder="Enter Total Mark Here" maxlength="3" required>
+                        <br>
+                        <label for="totalMark">Total Mark:</label><br>
+                        <input type="number" id="totalMark" placeholder="Enter Total Mark Here" maxlength="3" required>
+                        <br>
+                        <input type="submit" value="Submit" class="form-buttons">
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="assignment-list">
+                        <thead>
+                            <tr>
+                                <th>Assignment Title</th>
+                                <th>Assignment Description</th>
+                                <th>Assignment Submission Date</th>
+                                <th>Oral Mark</th>
+                                <th>Total Mark</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="assignmentTbody">
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

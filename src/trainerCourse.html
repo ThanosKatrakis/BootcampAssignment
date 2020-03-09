@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <title>School Thanos Katrakis</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <nav class="main-nav-bar">
+            <ul>
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/courses.html">Courses</a></li>
+                <li><a href="/src/trainers.html">Trainers</a></li>
+                <li><a href="/src/students.html">Students</a></li>
+                <li><a href="/src/assignments.html">Assignments</a></li>
+                <li><a href="/src/studentCourse.html">Student Per Course</a></li>
+                <li><a href="/src/trainerCourse.html">Trainer Per Course</a></li>
+                <li><a href="/src/assignmentCourse.html">Assignment Per Course</a></li>
+                <li><a href="/src/assignStudentCourse.html">Assignment Per Student Per Course</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="homepage-h1">TRAINER PER COURSE DATA</h3>
+
+        <form>
+            <label for="trainer">Choose a trainer: </label>
+            <select name="trainer" id="trainer" multiple>
+                <option value="" disabled selected style="background-color: black; color: white;">--------------------</option>
+                <option value="trainer1">Gatsos Ektoras</option>
+                <option value="trainer2">Strogylos Konstantinos</option>
+                <option value="trainer3">Zitis Konstantinos</option>
+                <option value="trainer4">Minaidis Kostas</option>
+                <option value="trainer5">Tzelepopoulos Vasilis</option>
+            </select>
+            <label for="course">Choose a course: </label>
+            <select name="course" id="course">
+                <option value="" disabled selected style="background-color: black; color: white;">--------------------</option>
+                <option value="course">C#</option>
+                <option value="course">Java</option>
+                <option value="course">Python</option>
+                <option value="course">Javascript</option>
+            </select>
+            <input type="submit" value="Submit" class="list-buttons">
+        </form>
+
+    </div>
+</body>
+
+</html>

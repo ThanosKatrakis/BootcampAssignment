@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <title>School Thanos Katrakis</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav class="main-nav-bar">
+            <ul>
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/courses.html">Courses</a></li>
+                <li><a href="/src/trainers.html">Trainers</a></li>
+                <li><a href="/src/students.html">Students</a></li>
+                <li><a href="/src/assignments.html">Assignments</a></li>
+                <li><a href="/src/studentCourse.html">Student Per Course</a></li>
+                <li><a href="/src/trainerCourse.html">Trainer Per Course</a></li>
+                <li><a href="/src/assignmentCourse.html">Assignment Per Course</a></li>
+                <li><a href="/src/assignStudentCourse.html">Assignment Per Student Per Course</a></li>
+            </ul>
+        </nav>
+
+        <h3>COURSES DATA</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();courseSubmit();" autocomplete="off">
+                        <label for="courseTitle">Course Title:</label><label class="validation-error hide"></label><br>
+                        <input type="text" id="courseTitle" placeholder="Enter Course Title Here" pattern="[A-Za-z]+"
+                            maxlength="30" required>
+                        <br>
+                        <label for="courseType">Course Type:</label><br>
+                        <input type="text" id="courseType" placeholder="Enter Course Type Here" pattern="[A-Za-z]+"
+                            maxlength="30" required>
+                        <br>
+                        <label for="courseStream">Course Stream:</label><br>
+                        <input type="text" id="courseStream" placeholder="Enter Course Stream Here" pattern="[A-Za-z]+"
+                            maxlength="30" required>
+                        <br>
+                        <label for="cStartDate">Course Start Date:</label><br>
+                        <input type="date" id="cStartDate" required>
+                        <br>
+                        <label for="cEndDate">Course End Date:</label><br>
+                        <input type="date" id="cEndDate" required>
+                        <br>
+                        <input type="submit" value="Submit" class="form-buttons">
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="course-list">
+                        <thead>
+                            <tr>
+                                <th>Course Title</th>
+                                <th>Course Type</th>
+                                <th>Course Stream</th>
+                                <th>Course Start Date</th>
+                                <th>Course End Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="courseTbody">
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

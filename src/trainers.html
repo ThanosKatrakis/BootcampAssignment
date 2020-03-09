@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <title>School Thanos Katrakis</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav class="main-nav-bar">
+            <ul>
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/courses.html">Courses</a></li>
+                <li><a href="/src/trainers.html">Trainers</a></li>
+                <li><a href="/src/students.html">Students</a></li>
+                <li><a href="/src/assignments.html">Assignments</a></li>
+                <li><a href="/src/studentCourse.html">Student Per Course</a></li>
+                <li><a href="/src/trainerCourse.html">Trainer Per Course</a></li>
+                <li><a href="/src/assignmentCourse.html">Assignment Per Course</a></li>
+                <li><a href="/src/assignStudentCourse.html">Assignment Per Student Per Course</a></li>
+            </ul>
+        </nav>
+
+        <h3>TRAINERS DATA</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();trainerSubmit();" autocomplete="off">
+                        <label for="trainerFirstName">First Name:</label><label class="validation-error hide"></label><br>
+                        <input type="text" id="trainerFirstName" placeholder="Enter First Name Here" pattern="[A-Za-z]+"
+                            maxlength="20" required>
+                        <br>
+                        <label for="trainerLastName">Last Name:</label><br>
+                        <input type="text" id="trainerLastName" placeholder="Enter Last Name Here" pattern="[A-Za-z]+"
+                            maxlength="20" required>
+                        <br>
+                        <label for="subject">SUBJECT Name:</label><br>
+                        <input type="text" id="subject" placeholder="Enter Subject Name Here" pattern="[A-Za-z]+"
+                            maxlength="25" required>
+                        <br>
+                        <input type="submit" value="Submit" class="form-buttons">
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="trainer-list">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>SUBJECT</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainerTbody">
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

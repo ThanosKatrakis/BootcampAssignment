@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+}
+
+.main-nav-bar ul {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+.main-nav-bar a {
+    color: rgb(211, 61, 61); 
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.main-nav-bar a:hover {
+    color: rgb(27, 145, 27);
+}
+
+.homepage-photo {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+.homepage-h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.form-buttons {
+    background-color: rgb(79, 138, 248);
+    color: black;
+}
+
+body {
+    background-color: #c4f3e5;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+table, th, td {
+    border: 1px solid rgb(89, 89, 97);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input.form-buttons {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
